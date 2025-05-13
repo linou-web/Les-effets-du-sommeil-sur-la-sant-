@@ -1,160 +1,187 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Effets du Sommeil sur la Santé</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les effets du sommeil sur la santé</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f8ff;
+      color: #333;
+    }
 
-        header {
-            background-color: #2d3a3f;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    header {
+      background-image: url('https://images.pexels.com/photos/935743/pexels-photo-935743.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 50, 0.4);
+    }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
+    header h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px #000;
+    }
 
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
+    nav {
+      background-color: #004466;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-        nav a:hover {
-            background-color: #575757;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+    }
 
-        .container {
-            padding: 30px;
-        }
+    nav a:hover {
+      background-color: #006699;
+    }
 
-        h2 {
-            color: #2d3a3f;
-        }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-        details {
-            margin: 10px 0;
-            background: #ffffff;
-            border-radius: 5px;
-            padding: 10px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-        }
+    h2 {
+      color: #004466;
+      margin-bottom: 20px;
+    }
 
-        summary {
-            font-weight: bold;
-            cursor: pointer;
-            color: #444;
-        }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
 
-        footer {
-            background-color: #2d3a3f;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 50px;
-        }
-    </style>
+    .card {
+      flex: 1 1 220px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #002233;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .img-left {
+      float: right;
+      margin: 0 0 20px 20px;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+
+    @media(max-width: 768px) {
+      .img-left {
+        float: none;
+        display: block;
+        margin: 20px auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Les Effets du Sommeil sur la Santé</h1>
-    <p>Comprendre le sommeil pour mieux vivre</p>
-</header>
+  <header>
+    <h1>Les effets du sommeil sur la santé</h1>
+  </header>
 
-<nav>
-    <a href="#phases">Phases</a>
-    <a href="#manque">Manque de sommeil</a>
-    <a href="#ameliorer">Conseils</a>
-</nav>
+  <nav>
+    <a href="#intro">Accueil</a>
+    <a href="#bienfaits">Bienfaits</a>
+    <a href="#manque">Conséquences</a>
+    <a href="#conseils">Conseils</a>
+    <a href="#video">Vidéo</a>
+  </nav>
 
-<div class="container">
+  <section id="intro">
+    <h2>Le sommeil, un pilier de la santé</h2>
+    <img class="img-left" src="https://images.pexels.com/photos/935743/pexels-photo-935743.jpeg" alt="Sommeil">
+    <p>
+      Le sommeil est un état naturel et régulier indispensable au bon fonctionnement du corps et de l’esprit. Il permet à notre organisme de se reposer, de se régénérer et de renforcer notre système immunitaire. Un bon sommeil améliore la concentration, l’humeur et la mémoire.
+    </p>
+  </section>
 
-    <section>
-        <h2>Introduction</h2>
-        <p>Le sommeil est un pilier fondamental de la santé humaine. Il permet à notre corps et à notre cerveau de se régénérer, de consolider les apprentissages et de maintenir un équilibre mental et physique. Pourtant, dans nos sociétés modernes, le sommeil est souvent négligé, ce qui peut entraîner de nombreuses conséquences sur la santé.</p>
-    </section>
+  <section id="bienfaits">
+    <h2>Bienfaits du sommeil</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mémoire</h3>
+        <img src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg" alt="Mémoire">
+        <p>Le sommeil consolide l’apprentissage et améliore la mémoire.</p>
+      </div>
+      <div class="card">
+        <h3>Immunité</h3>
+        <img src="https://images.pexels.com/photos/865711/pexels-photo-865711.jpeg" alt="Immunité">
+        <p>Il renforce les défenses de l'organisme contre les infections.</p>
+      </div>
+      <div class="card">
+        <h3>Stress</h3>
+        <img src="https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg" alt="Stress">
+        <p>Un bon sommeil réduit le stress et l’anxiété.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="phases">
-        <h2>Les Phases du Sommeil</h2>
+  <section id="manque">
+    <h2>Conséquences du manque de sommeil</h2>
+    <p>
+      Le manque de sommeil a des effets néfastes sur la santé :
+    </p>
+    <ul>
+      <li>Fatigue chronique</li>
+      <li>Irritabilité et troubles de l’humeur</li>
+      <li>Risque accru de maladies cardiovasculaires</li>
+      <li>Baisse des performances cognitives</li>
+    </ul>
+  </section>
 
-        <details>
-            <summary>Sommeil léger</summary>
-            <p>Le sommeil léger est la première étape du cycle de sommeil. On s’endort progressivement, les muscles se relâchent, et la respiration ralentit. On peut se réveiller facilement à ce stade. Il prépare le cerveau et le corps à entrer dans des phases plus profondes.</p>
-        </details>
+  <section id="conseils">
+    <h2>Conseils pour mieux dormir</h2>
+    <ul>
+      <li>Se coucher et se lever à horaires réguliers</li>
+      <li>Éviter les écrans avant de dormir</li>
+      <li>Créer une ambiance calme et sombre</li>
+      <li>Faire de l’exercice dans la journée</li>
+      <li>Manger léger le soir</li>
+    </ul>
+  </section>
 
-        <details>
-            <summary>Sommeil profond</summary>
-            <p>Le sommeil profond est crucial pour la récupération physique. Il correspond aux stades 3 et 4 du sommeil lent, caractérisé par une activité cérébrale très lente (ondes delta). Cette phase permet la réparation cellulaire, la régénération et le renforcement du système immunitaire.</p>
-        </details>
+  <section id="video">
+    <h2>Vidéo : Pourquoi le sommeil est-il si important ?</h2>
+    <iframe src="https://www.youtube.com/embed/K0t3htvGIMY" allowfullscreen></iframe>
+  </section>
 
-        <details>
-            <summary>Sommeil paradoxal</summary>
-            <p>Le sommeil paradoxal est la phase des rêves intenses. L’activité cérébrale est proche de l’éveil, mais le corps est presque complètement paralysé. Cette phase est essentielle pour la consolidation de la mémoire, la créativité et la régulation émotionnelle.</p>
-        </details>
-    </section>
-
-    <section id="manque">
-        <h2>Effets du Manque de Sommeil</h2>
-
-        <details>
-            <summary>Impact sur le système immunitaire</summary>
-            <p>Le manque de sommeil réduit la production de cytokines, des protéines indispensables pour lutter contre les infections. On devient plus vulnérable aux maladies, y compris les virus et les inflammations.</p>
-        </details>
-
-        <details>
-            <summary>Impact sur le cerveau et la mémoire</summary>
-            <p>Un sommeil insuffisant perturbe la concentration, le raisonnement et la mémoire. Il ralentit les temps de réaction et augmente les risques d’erreurs.</p>
-        </details>
-
-        <details>
-            <summary>Impact sur la santé mentale</summary>
-            <p>Le manque de sommeil favorise l’anxiété, l’irritabilité, la dépression et les troubles de l’humeur. Un cercle vicieux peut s’installer entre troubles du sommeil et mal-être psychologique.</p>
-        </details>
-
-        <details>
-            <summary>Impact sur le cœur et le métabolisme</summary>
-            <p>Dormir peu accroît les risques de maladies cardiovasculaires, d’hypertension, de diabète de type 2 et de prise de poids à cause du dérèglement hormonal (ghréline/leptine).</p>
-        </details>
-    </section>
-
-    <section id="ameliorer">
-        <h2>Conseils pour Améliorer son Sommeil</h2>
-
-        <details>
-            <summary>Créer un environnement propice</summary>
-            <p>Veillez à avoir une chambre calme, sombre et fraîche. Limitez l’exposition aux écrans le soir, utilisez un bon matelas et évitez les nuisances sonores.</p>
-        </details>
-
-        <details>
-            <summary>Adopter une routine régulière</summary>
-            <p>Essayez. de vous coucher et de vous lever à heures fixes. Évitez les siestes longues et mettez en place un rituel de coucher relaxant (lecture, tisane, musique douce).</p>
-        </details>
-
-        <details>
-            <summary>Hygiène de vie</summary>
-            <p>Limitez la caféine, l’alcool et les repas lourds avant de dormir. Pratiquez une activité physique régulière et exposez-vous à la lumière naturelle le matin.</p>
-        </details>
-    </section>
-
-</div>
-
-<footer>
-    <p>© 2025 - Site éducatif sur le sommeil | Réalisé avec passion</p>
-</footer>
+  <footer>
+    <p>Site réalisé par linou-web</p>
+    <p><a href="#intro" style="color: #fff;">Retour en haut</a></p>
+  </footer>
 
 </body>
 </html>
