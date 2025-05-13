@@ -4,64 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Les effets du sommeil sur la santé</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
+    * { 
+      box-sizing: border-box; 
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #f4f8fc;
-      color: #333;
+      background-color: #f1f6f9;
+      color: #2c3e50;
+      scroll-behavior: smooth;
     }
 
     header {
-      background-image: url("https://images.pexels.com/photos/935743/pexels-photo-935743.jpeg");
-      background-size: cover;
-      background-position: center;
+      background: linear-gradient(to right, #004e92, #000428);
       padding: 100px 20px;
-      color: white;
       text-align: center;
-      box-shadow: inset 0 0 0 2000px rgba(0, 0, 50, 0.4);
+      color: white;
+      animation: fadeIn 2s ease-in-out;
     }
 
     header h1 {
       font-size: 3em;
-      text-shadow: 2px 2px 6px #000;
-      animation: fadeInDown 1s ease-out;
+      margin: 0;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #00f; }
+      to { text-shadow: 0 0 20px #fff, 0 0 40px #0ff; }
     }
 
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
 
     .accordion {
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      background-color: #fff;
+      margin-top: 20px;
     }
 
     .accordion-item {
-      border-bottom: 1px solid #ddd;
+      background-color: white;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
     }
 
     .accordion-title {
-      background-color: #e0f0ff;
       padding: 15px;
-      cursor: pointer;
       font-weight: bold;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+      background-color: #dfefff;
+      transition: background-color 0.3s ease;
     }
 
     .accordion-title:hover {
-      background-color: #d0e8ff;
-      transform: scale(1.02);
+      background-color: #c5e3ff;
     }
 
     .accordion-content {
       max-height: 0;
-      overflow: hidden;
       opacity: 0;
+      overflow: hidden;
       transition: all 0.5s ease;
       padding: 0 15px;
     }
@@ -75,7 +90,7 @@
     .accordion-content img {
       max-width: 100%;
       border-radius: 8px;
-      margin-top: 10px;
+      margin: 10px 0;
     }
 
     iframe {
@@ -87,17 +102,16 @@
     }
 
     .interactive-button {
-      display: inline-block;
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
       padding: 12px 24px;
-      margin-top: 20px;
       font-size: 16px;
-      color: #fff;
-      background-color: #007BFF;
-      border: none;
+      color: white;
+      background-color: #007bff;
       border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
       text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
     .interactive-button:hover {
@@ -106,22 +120,11 @@
     }
 
     footer {
-      text-align: center;
       background-color: #002244;
       color: white;
+      text-align: center;
       padding: 20px;
       margin-top: 40px;
-    }
-
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
   </style>
 </head>
@@ -133,84 +136,74 @@
 
   <div class="container">
     <div class="accordion">
-
+      <!-- Partie 1 -->
       <div class="accordion-item">
-        <div class="accordion-title">1. Qu’est-ce que le sommeil ?</div>
+        <div class="accordion-title" onclick="toggleAccordion(this)">1. Qu'est-ce que le sommeil ?</div>
         <div class="accordion-content">
-          <h3>Définition</h3>
-          <p>Le sommeil est un état physiologique essentiel au bon fonctionnement du corps humain. Il permet au cerveau de se régénérer, de traiter les informations et au corps de récupérer.</p>
-          <h3>Les cycles</h3>
-          <p>Le sommeil est divisé en plusieurs phases : léger, profond, et paradoxal. Ces cycles se répètent plusieurs fois par nuit.</p>
-          <img src="https://images.pexels.com/photos/935743/pexels-photo-935743.jpeg" alt="Sommeil"/>
+          <p>Le sommeil est un état physiologique naturel essentiel au bon fonctionnement du corps et de l’esprit. Il se compose de cycles comprenant plusieurs phases (sommeil lent, profond, paradoxal), chacune ayant une fonction spécifique dans la récupération physique, la consolidation de la mémoire et la régulation des émotions.</p>
+          <p>Un adulte dort en moyenne entre 7 et 9 heures par nuit. Le sommeil permet également de restaurer le système immunitaire, d’équilibrer les hormones et d’assurer un bon métabolisme.</p>
+          <img src="https://cdn.pixabay.com/photo/2017/03/22/17/16/bed-2161802_1280.jpg" alt="Sommeil réparateur" />
         </div>
       </div>
 
+      <!-- Partie 2 -->
       <div class="accordion-item">
-        <div class="accordion-title">2. Les bienfaits du sommeil</div>
+        <div class="accordion-title" onclick="toggleAccordion(this)">2. Les bienfaits du sommeil</div>
         <div class="accordion-content">
-          <p>Le sommeil joue un rôle majeur dans :</p>
+          <p>Un sommeil de qualité a de nombreux bienfaits : il améliore la mémoire, régule l’humeur, réduit le stress, renforce les défenses immunitaires et aide à la concentration. Il joue aussi un rôle crucial dans la prévention des maladies cardiovasculaires et du diabète.</p>
+          <p>Les performances scolaires ou professionnelles sont nettement meilleures chez les individus bien reposés.</p>
+          <img src="https://cdn.pixabay.com/photo/2018/03/06/20/58/success-3207800_1280.jpg" alt="Bienfaits du sommeil" />
+        </div>
+      </div>
+
+      <!-- Partie 3 -->
+      <div class="accordion-item">
+        <div class="accordion-title" onclick="toggleAccordion(this)">3. Les conséquences du manque de sommeil</div>
+        <div class="accordion-content">
+          <p>Un déficit chronique de sommeil peut entraîner de nombreux effets néfastes : fatigue constante, troubles de l’attention, irritabilité, prise de poids, troubles métaboliques, anxiété et dépression. Il est aussi lié à une augmentation du risque d'accidents de la route ou du travail.</p>
+          <p>Des études montrent également un lien entre manque de sommeil et diminution de l’espérance de vie.</p>
+          <img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/sad-1992493_1280.jpg" alt="Conséquences du manque de sommeil" />
+        </div>
+      </div>
+
+      <!-- Partie 4 -->
+      <div class="accordion-item">
+        <div class="accordion-title" onclick="toggleAccordion(this)">4. Conseils pour bien dormir</div>
+        <div class="accordion-content">
+          <p>Voici quelques conseils pour améliorer la qualité de ton sommeil :</p>
           <ul>
-            <li>La mémoire</li>
-            <li>La concentration</li>
-            <li>La croissance</li>
-            <li>Le système immunitaire</li>
+            <li>Avoir une heure de coucher régulière</li>
+            <li>Éviter les écrans 1h avant de dormir</li>
+            <li>Créer un environnement calme, sombre et frais</li>
+            <li>Éviter le café et les repas lourds le soir</li>
+            <li>Faire de l’exercice physique en journée</li>
           </ul>
-          <img src="https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg" alt="Bienfaits du sommeil"/>
+          <img src="https://cdn.pixabay.com/photo/2017/08/07/02/32/bedroom-2599658_1280.jpg" alt="Chambre calme" />
         </div>
       </div>
 
+      <!-- Partie 5 : Vidéo -->
       <div class="accordion-item">
-        <div class="accordion-title">3. Manque de sommeil</div>
+        <div class="accordion-title" onclick="toggleAccordion(this)">5. Vidéo explicative</div>
         <div class="accordion-content">
-          <p>Un manque de sommeil peut provoquer :</p>
-          <ul>
-            <li>Stress</li>
-            <li>Fatigue chronique</li>
-            <li>Dépression</li>
-            <li>Risque accru de maladies cardiovasculaires</li>
-          </ul>
-          <img src="https://images.pexels.com/photos/3768146/pexels-photo-3768146.jpeg" alt="Fatigue"/>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-title">4. Conseils pour bien dormir</div>
-        <div class="accordion-content">
-          <ul>
-            <li>Éviter les écrans avant de dormir</li>
-            <li>Garder un rythme régulier</li>
-            <li>Créer un environnement calme et sombre</li>
-          </ul>
-          <img src="https://images.pexels.com/photos/935777/pexels-photo-935777.jpeg" alt="Dormir"/>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-title">5. Vidéo explicative</div>
-        <div class="accordion-content">
-          <p>Voici une vidéo qui résume bien l'importance du sommeil :</p>
+          <p>Regarde cette vidéo qui explique très bien l’importance du sommeil :</p>
           <iframe src="https://www.youtube.com/embed/3ShL9kICLv4" allowfullscreen></iframe>
         </div>
       </div>
-
     </div>
 
     <a href="#top" class="interactive-button">Retour en haut</a>
   </div>
 
   <footer>
-    Site créé par PICOT Emeline — Tous droits réservés
+    <p>Site créé par PICOT Emeline – Projet scolaire – 2025</p>
   </footer>
 
   <script>
-    const titles = document.querySelectorAll('.accordion-title');
-
-    titles.forEach(title => {
-      title.addEventListener('click', () => {
-        const content = title.nextElementSibling;
-        content.classList.toggle('show');
-      });
-    });
+    function toggleAccordion(element) {
+      const content = element.nextElementSibling;
+      content.classList.toggle('show');
+    }
   </script>
 </body>
 </html>
