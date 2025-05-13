@@ -5,26 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Les effets du sommeil sur la santé</title>
   <style>
-    /* ... [Styles précédents inchangés] ... */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f8fc;
+      color: #333;
+    }
 
-    /* Animation du titre principal */
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    header {
+      background-image: url("https://images.pexels.com/photos/935743/pexels-photo-935743.jpeg");
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      color: white;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 50, 0.4);
     }
 
     header h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 6px #000;
       animation: fadeInDown 1s ease-out;
     }
 
-    /* Animation des titres de sections au survol */
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .accordion {
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #fff;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+
     .accordion-title {
+      background-color: #e0f0ff;
+      padding: 15px;
+      cursor: pointer;
+      font-weight: bold;
       transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
@@ -33,20 +58,34 @@
       transform: scale(1.02);
     }
 
-    /* Animation d'apparition des contenus */
     .accordion-content {
-      opacity: 0;
       max-height: 0;
       overflow: hidden;
-      transition: opacity 0.5s ease, max-height 0.5s ease;
+      opacity: 0;
+      transition: all 0.5s ease;
+      padding: 0 15px;
     }
 
     .accordion-content.show {
+      max-height: 1000px;
       opacity: 1;
-      max-height: 1000px; /* Valeur suffisamment grande pour contenir le contenu */
+      padding: 15px;
     }
 
-    /* Animation du bouton interactif */
+    .accordion-content img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
     .interactive-button {
       display: inline-block;
       padding: 12px 24px;
@@ -66,7 +105,24 @@
       transform: scale(1.05);
     }
 
-    /* ... [Autres styles inchangés] ... */
+    footer {
+      text-align: center;
+      background-color: #002244;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
@@ -77,19 +133,79 @@
 
   <div class="container">
     <div class="accordion">
-      <!-- ... [Sections inchangées] ... -->
+
+      <div class="accordion-item">
+        <div class="accordion-title">1. Qu’est-ce que le sommeil ?</div>
+        <div class="accordion-content">
+          <h3>Définition</h3>
+          <p>Le sommeil est un état physiologique essentiel au bon fonctionnement du corps humain. Il permet au cerveau de se régénérer, de traiter les informations et au corps de récupérer.</p>
+          <h3>Les cycles</h3>
+          <p>Le sommeil est divisé en plusieurs phases : léger, profond, et paradoxal. Ces cycles se répètent plusieurs fois par nuit.</p>
+          <img src="https://images.pexels.com/photos/935743/pexels-photo-935743.jpeg" alt="Sommeil"/>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">2. Les bienfaits du sommeil</div>
+        <div class="accordion-content">
+          <p>Le sommeil joue un rôle majeur dans :</p>
+          <ul>
+            <li>La mémoire</li>
+            <li>La concentration</li>
+            <li>La croissance</li>
+            <li>Le système immunitaire</li>
+          </ul>
+          <img src="https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg" alt="Bienfaits du sommeil"/>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">3. Manque de sommeil</div>
+        <div class="accordion-content">
+          <p>Un manque de sommeil peut provoquer :</p>
+          <ul>
+            <li>Stress</li>
+            <li>Fatigue chronique</li>
+            <li>Dépression</li>
+            <li>Risque accru de maladies cardiovasculaires</li>
+          </ul>
+          <img src="https://images.pexels.com/photos/3768146/pexels-photo-3768146.jpeg" alt="Fatigue"/>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">4. Conseils pour bien dormir</div>
+        <div class="accordion-content">
+          <ul>
+            <li>Éviter les écrans avant de dormir</li>
+            <li>Garder un rythme régulier</li>
+            <li>Créer un environnement calme et sombre</li>
+          </ul>
+          <img src="https://images.pexels.com/photos/935777/pexels-photo-935777.jpeg" alt="Dormir"/>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">5. Vidéo explicative</div>
+        <div class="accordion-content">
+          <p>Voici une vidéo qui résume bien l'importance du sommeil :</p>
+          <iframe src="https://www.youtube.com/embed/3ShL9kICLv4" allowfullscreen></iframe>
+        </div>
+      </div>
+
     </div>
 
     <a href="#top" class="interactive-button">Retour en haut</a>
   </div>
 
   <footer>
-    Site créé par PICOT Emeline — Tous droits réservés
+    Site créé par linou-web — Tous droits réservés
   </footer>
 
   <script>
-    const accordions = document.querySelectorAll('.accordion-title');
-    accordions.forEach(title => {
+    const titles = document.querySelectorAll('.accordion-title');
+
+    titles.forEach(title => {
       title.addEventListener('click', () => {
         const content = title.nextElementSibling;
         content.classList.toggle('show');
