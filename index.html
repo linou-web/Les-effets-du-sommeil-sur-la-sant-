@@ -87,6 +87,24 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
+
+    .interactive-button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .interactive-button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 
@@ -104,15 +122,15 @@
         <div class="accordion-content">
           <h3>Définition</h3>
           <p>
-            Le sommeil est un état naturel et essentiel de repos pour le corps et l'esprit. Il permet une récupération physique, cognitive et émotionnelle.
+            Le sommeil est un état naturel récurrent caractérisé par une altération de la conscience, une diminution de l'activité sensorielle et musculaire, et une inhibition quasi totale de toutes les actions volontaires. Il est essentiel pour le bon fonctionnement de l'organisme.
           </p>
           <h3>Les cycles du sommeil</h3>
           <p>
-            Le sommeil se divise en plusieurs cycles d’environ 90 minutes, comprenant :
+            Le sommeil se compose de plusieurs cycles d’environ 90 minutes, chacun comprenant :
             <ul>
-              <li>le sommeil léger</li>
-              <li>le sommeil profond (réparateur)</li>
-              <li>le sommeil paradoxal (rêves, mémoire)</li>
+              <li><strong>Sommeil léger :</strong> phase de transition entre l'éveil et le sommeil profond.</li>
+              <li><strong>Sommeil profond :</strong> période de récupération physique intense.</li>
+              <li><strong>Sommeil paradoxal :</strong> phase des rêves, importante pour la consolidation de la mémoire.</li>
             </ul>
           </p>
           <img src="https://images.pexels.com/photos/935743/pexels-photo-935743.jpeg" alt="Cycle du sommeil" />
@@ -124,15 +142,15 @@
         <div class="accordion-content">
           <h3>Pour le cerveau</h3>
           <p>
-            Il consolide la mémoire, renforce l'apprentissage et améliore la concentration.
+            Le sommeil joue un rôle crucial dans le traitement de l'information, la consolidation de la mémoire et l'apprentissage. Il permet également de maintenir une bonne concentration et une stabilité émotionnelle.
           </p>
           <h3>Pour le corps</h3>
           <p>
-            Il répare les tissus, régule les hormones et soutient le système immunitaire.
+            Pendant le sommeil, le corps se régénère : réparation des tissus, renforcement du système immunitaire, régulation hormonale, et maintien de l'équilibre métabolique.
           </p>
           <h3>Équilibre émotionnel</h3>
           <p>
-            Le sommeil aide à gérer le stress, l'anxiété et stabilise l'humeur.
+            Un sommeil de qualité aide à gérer le stress, réduit l'anxiété et améliore l'humeur générale, contribuant ainsi à une meilleure santé mentale.
           </p>
           <img src="https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg" alt="Sommeil bénéfique"/>
         </div>
@@ -143,11 +161,15 @@
         <div class="accordion-content">
           <h3>Fatigue chronique</h3>
           <p>
-            Une dette de sommeil entraîne une baisse d'énergie, une irritabilité et des troubles de la concentration.
+            Le manque de sommeil entraîne une fatigue persistante, une baisse de la vigilance, des troubles de la concentration et une diminution des performances cognitives.
           </p>
-          <h3>Maladies</h3>
+          <h3>Problèmes de santé</h3>
           <p>
-            Risque accru de diabète, maladies cardiovasculaires, obésité et affaiblissement du système immunitaire.
+            Une privation de sommeil prolongée augmente le risque de développer des maladies cardiovasculaires, du diabète, de l'obésité et affaiblit le système immunitaire.
+          </p>
+          <h3>Impact sur la santé mentale</h3>
+          <p>
+            Le déficit de sommeil est lié à une augmentation des troubles de l'humeur, tels que la dépression et l'anxiété, et peut aggraver les troubles mentaux existants.
           </p>
           <img src="https://images.pexels.com/photos/3768146/pexels-photo-3768146.jpeg" alt="Conséquences du manque de sommeil"/>
         </div>
@@ -156,16 +178,20 @@
       <div class="accordion-item">
         <div class="accordion-title">4. Conseils pour mieux dormir</div>
         <div class="accordion-content">
-          <h3>Les bonnes habitudes</h3>
+          <h3>Adopter une routine</h3>
           <ul>
-            <li>Se coucher et se lever à heures fixes</li>
-            <li>Éviter les écrans avant le coucher</li>
-            <li>Créer un environnement calme, sombre et frais</li>
+            <li>Se coucher et se lever à des heures régulières, même le week-end.</li>
+            <li>Éviter les siestes prolongées en journée.</li>
           </ul>
-          <h3>Ce qu’il faut éviter</h3>
+          <h3>Créer un environnement propice</h3>
           <ul>
-            <li>La caféine ou les repas lourds le soir</li>
-            <li>L’exposition à la lumière bleue tard le soir</li>
+            <li>Maintenir une chambre sombre, calme et à une température confortable.</li>
+            <li>Utiliser le lit uniquement pour dormir afin d'associer cet espace au repos.</li>
+          </ul>
+          <h3>Éviter les stimulants</h3>
+          <ul>
+            <li>Limiter la consommation de caféine et d'alcool en fin de journée.</li>
+            <li>Éviter les écrans (téléphone, ordinateur, télévision) avant le coucher.</li>
           </ul>
           <img src="https://images.pexels.com/photos/935777/pexels-photo-935777.jpeg" alt="Conseils sommeil" />
         </div>
@@ -181,10 +207,12 @@
 
     </div>
 
+    <a href="#top" class="interactive-button">Retour en haut</a>
+
   </div>
 
   <footer>
-    Site créé par linou-web — Tous droits réservés
+    Site créé par PICOT Emeline — Tous droits réservés
   </footer>
 
   <script>
