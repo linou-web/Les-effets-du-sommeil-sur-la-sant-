@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Effets du Sommeil sur la Santé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2d3a3f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #2d3a3f;
+        }
+
+        details {
+            margin: 10px 0;
+            background: #ffffff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #444;
+        }
+
+        footer {
+            background-color: #2d3a3f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Les Effets du Sommeil sur la Santé</h1>
+    <p>Comprendre le sommeil pour mieux vivre</p>
+</header>
+
+<nav>
+    <a href="#phases">Phases</a>
+    <a href="#manque">Manque de sommeil</a>
+    <a href="#ameliorer">Conseils</a>
+</nav>
+
+<div class="container">
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Le sommeil est un pilier fondamental de la santé humaine. Il permet à notre corps et à notre cerveau de se régénérer, de consolider les apprentissages et de maintenir un équilibre mental et physique. Pourtant, dans nos sociétés modernes, le sommeil est souvent négligé, ce qui peut entraîner de nombreuses conséquences sur la santé.</p>
+    </section>
+
+    <section id="phases">
+        <h2>Les Phases du Sommeil</h2>
+
+        <details>
+            <summary>Sommeil léger</summary>
+            <p>Le sommeil léger est la première étape du cycle de sommeil. On s’endort progressivement, les muscles se relâchent, et la respiration ralentit. On peut se réveiller facilement à ce stade. Il prépare le cerveau et le corps à entrer dans des phases plus profondes.</p>
+        </details>
+
+        <details>
+            <summary>Sommeil profond</summary>
+            <p>Le sommeil profond est crucial pour la récupération physique. Il correspond aux stades 3 et 4 du sommeil lent, caractérisé par une activité cérébrale très lente (ondes delta). Cette phase permet la réparation cellulaire, la régénération et le renforcement du système immunitaire.</p>
+        </details>
+
+        <details>
+            <summary>Sommeil paradoxal</summary>
+            <p>Le sommeil paradoxal est la phase des rêves intenses. L’activité cérébrale est proche de l’éveil, mais le corps est presque complètement paralysé. Cette phase est essentielle pour la consolidation de la mémoire, la créativité et la régulation émotionnelle.</p>
+        </details>
+    </section>
+
+    <section id="manque">
+        <h2>Effets du Manque de Sommeil</h2>
+
+        <details>
+            <summary>Impact sur le système immunitaire</summary>
+            <p>Le manque de sommeil réduit la production de cytokines, des protéines indispensables pour lutter contre les infections. On devient plus vulnérable aux maladies, y compris les virus et les inflammations.</p>
+        </details>
+
+        <details>
+            <summary>Impact sur le cerveau et la mémoire</summary>
+            <p>Un sommeil insuffisant perturbe la concentration, le raisonnement et la mémoire. Il ralentit les temps de réaction et augmente les risques d’erreurs.</p>
+        </details>
+
+        <details>
+            <summary>Impact sur la santé mentale</summary>
+            <p>Le manque de sommeil favorise l’anxiété, l’irritabilité, la dépression et les troubles de l’humeur. Un cercle vicieux peut s’installer entre troubles du sommeil et mal-être psychologique.</p>
+        </details>
+
+        <details>
+            <summary>Impact sur le cœur et le métabolisme</summary>
+            <p>Dormir peu accroît les risques de maladies cardiovasculaires, d’hypertension, de diabète de type 2 et de prise de poids à cause du dérèglement hormonal (ghréline/leptine).</p>
+        </details>
+    </section>
+
+    <section id="ameliorer">
+        <h2>Conseils pour Améliorer son Sommeil</h2>
+
+        <details>
+            <summary>Créer un environnement propice</summary>
+            <p>Veillez à avoir une chambre calme, sombre et fraîche. Limitez l’exposition aux écrans le soir, utilisez un bon matelas et évitez les nuisances sonores.</p>
+        </details>
+
+        <details>
+            <summary>Adopter une routine régulière</summary>
+            <p>Essayez de vous coucher et de vous lever à heures fixes. Évitez les siestes longues et mettez en place un rituel de coucher relaxant (lecture, tisane, musique douce).</p>
+        </details>
+
+        <details>
+            <summary>Hygiène de vie</summary>
+            <p>Limitez la caféine, l’alcool et les repas lourds avant de dormir. Pratiquez une activité physique régulière et exposez-vous à la lumière naturelle le matin.</p>
+        </details>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2025 - Site éducatif sur le sommeil | Réalisé avec passion</p>
+</footer>
+
+</body>
+</html>
